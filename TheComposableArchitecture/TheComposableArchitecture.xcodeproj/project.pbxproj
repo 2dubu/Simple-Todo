@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C66A7F1D29D89B0500529A0C /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A7F1C29D89B0500529A0C /* AddTodoView.swift */; };
 		C68AB25E298EA94E00EAE4F5 /* TheComposableArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68AB25D298EA94E00EAE4F5 /* TheComposableArchitectureApp.swift */; };
 		C68AB260298EA94E00EAE4F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68AB25F298EA94E00EAE4F5 /* ContentView.swift */; };
 		C68AB262298EA95000EAE4F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68AB261298EA95000EAE4F5 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C66A7F1C29D89B0500529A0C /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
 		C68AB25A298EA94E00EAE4F5 /* TheComposableArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheComposableArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68AB25D298EA94E00EAE4F5 /* TheComposableArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheComposableArchitectureApp.swift; sourceTree = "<group>"; };
 		C68AB25F298EA94E00EAE4F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				C68AB25D298EA94E00EAE4F5 /* TheComposableArchitectureApp.swift */,
 				C68AB25F298EA94E00EAE4F5 /* ContentView.swift */,
+				C66A7F1C29D89B0500529A0C /* AddTodoView.swift */,
 				C68AB261298EA95000EAE4F5 /* Assets.xcassets */,
 				C68AB263298EA95000EAE4F5 /* Preview Content */,
 			);
@@ -147,6 +150,7 @@
 			files = (
 				C68AB260298EA94E00EAE4F5 /* ContentView.swift in Sources */,
 				C68AB25E298EA94E00EAE4F5 /* TheComposableArchitectureApp.swift in Sources */,
+				C66A7F1D29D89B0500529A0C /* AddTodoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
