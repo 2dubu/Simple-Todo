@@ -2,26 +2,31 @@ import SwiftUI
 import ComposableArchitecture
 
 // MARK: - Domain
-
-struct AppState: Equatable {
-    var todos: [Todo] = []
-    var newTodoTitle = ""
-}
-
-enum AppAction {
-    case todoToggled(Int)
-    case delete(IndexSet)
-}
-
 struct Todo: Equatable, Identifiable {
     let id = UUID()
     var title: String
     var completed: Bool = false
 }
 
+typealias Todos = [Todo]
+
+struct AppState: Equatable {
+    var todos: Todos = .init()
+}
+
+enum AppAction {
+    case add(String)
+    case todoToggled(Int)
+    case delete(IndexSet)
+}
+
 // MARK: - Reducers
 let appReducer = AnyReducer<AppState, AppAction, Void> { state, action, _ in
     switch action {
+    case let .add(content):
+        state.todos.append(Todo(title: content))
+        return .none
+        
     case let .todoToggled(index):
         state.todos[index].completed.toggle()
         return .none
@@ -34,6 +39,7 @@ let appReducer = AnyReducer<AppState, AppAction, Void> { state, action, _ in
 
 // MARK: - Views
 struct TodoListView: View {
+    @State private var showingSheet: Bool = false
     let store: Store<AppState, AppAction>
     
     var body: some View {
@@ -56,31 +62,28 @@ struct TodoListView: View {
                 }
                 .navigationTitle("Todo List")
                 .navigationBarItems(trailing:
-                    Button("Add") {
-                        print("Add new todo")
+                    Button {
+                        showingSheet = true
+                    } label: {
+                        Text("Add")
                     }
                 )
+                .overlay {
+                    if viewStore.state.todos.isEmpty {
+                        Text("There's no todo!\nPress the Add button to add new todo")
+                            .multilineTextAlignment(.center)
+                    }
+                }
+                .sheet(isPresented: $showingSheet) {
+                    AddTodoView(store: store)
+                        .presentationDetents([.height(195)])
+                        .presentationDragIndicator(.hidden)
+                }
             }
         }
     }
 
     private func todoIndex(for todo: Todo, in todos: [Todo]) -> Int {
         todos.firstIndex(where: { $0.id == todo.id })!
-    }
-}
-
-struct TodoListView_Previews: PreviewProvider {
-    static var previews: some View {
-        TodoListView(store: Store(
-            initialState: AppState(
-                todos: [
-                    Todo(title: "Buy milk"),
-                    Todo(title: "Take out the trash"),
-                    Todo(title: "Do laundry")
-                ]
-            ),
-            reducer: appReducer,
-            environment: ()
-        ))
     }
 }
