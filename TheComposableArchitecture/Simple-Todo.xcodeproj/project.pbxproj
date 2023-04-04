@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C66A7F1D29D89B0500529A0C /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A7F1C29D89B0500529A0C /* AddTodoView.swift */; };
-		C68AB25E298EA94E00EAE4F5 /* TheComposableArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68AB25D298EA94E00EAE4F5 /* TheComposableArchitectureApp.swift */; };
+		C68AB25E298EA94E00EAE4F5 /* Simple-Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68AB25D298EA94E00EAE4F5 /* Simple-Todo.swift */; };
 		C68AB260298EA94E00EAE4F5 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68AB25F298EA94E00EAE4F5 /* TodoListView.swift */; };
 		C68AB262298EA95000EAE4F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68AB261298EA95000EAE4F5 /* Assets.xcassets */; };
 		C68AB265298EA95000EAE4F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68AB264298EA95000EAE4F5 /* Preview Assets.xcassets */; };
@@ -17,8 +17,8 @@
 
 /* Begin PBXFileReference section */
 		C66A7F1C29D89B0500529A0C /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
-		C68AB25A298EA94E00EAE4F5 /* TheComposableArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheComposableArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C68AB25D298EA94E00EAE4F5 /* TheComposableArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheComposableArchitectureApp.swift; sourceTree = "<group>"; };
+		C68AB25A298EA94E00EAE4F5 /* Simple-Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple-Todo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C68AB25D298EA94E00EAE4F5 /* Simple-Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple-Todo.swift"; sourceTree = "<group>"; };
 		C68AB25F298EA94E00EAE4F5 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		C68AB261298EA95000EAE4F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C68AB264298EA95000EAE4F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		C68AB251298EA94E00EAE4F5 = {
 			isa = PBXGroup;
 			children = (
-				C68AB25C298EA94E00EAE4F5 /* TheComposableArchitecture */,
+				C68AB25C298EA94E00EAE4F5 /* Simple-Todo */,
 				C68AB25B298EA94E00EAE4F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,21 +47,21 @@
 		C68AB25B298EA94E00EAE4F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C68AB25A298EA94E00EAE4F5 /* TheComposableArchitecture.app */,
+				C68AB25A298EA94E00EAE4F5 /* Simple-Todo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C68AB25C298EA94E00EAE4F5 /* TheComposableArchitecture */ = {
+		C68AB25C298EA94E00EAE4F5 /* Simple-Todo */ = {
 			isa = PBXGroup;
 			children = (
-				C68AB25D298EA94E00EAE4F5 /* TheComposableArchitectureApp.swift */,
+				C68AB25D298EA94E00EAE4F5 /* Simple-Todo.swift */,
 				C68AB25F298EA94E00EAE4F5 /* TodoListView.swift */,
 				C66A7F1C29D89B0500529A0C /* AddTodoView.swift */,
 				C68AB261298EA95000EAE4F5 /* Assets.xcassets */,
 				C68AB263298EA95000EAE4F5 /* Preview Content */,
 			);
-			path = TheComposableArchitecture;
+			path = "Simple-Todo";
 			sourceTree = "<group>";
 		};
 		C68AB263298EA95000EAE4F5 /* Preview Content */ = {
@@ -75,9 +75,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C68AB259298EA94E00EAE4F5 /* TheComposableArchitecture */ = {
+		C68AB259298EA94E00EAE4F5 /* Simple-Todo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C68AB268298EA95000EAE4F5 /* Build configuration list for PBXNativeTarget "TheComposableArchitecture" */;
+			buildConfigurationList = C68AB268298EA95000EAE4F5 /* Build configuration list for PBXNativeTarget "Simple-Todo" */;
 			buildPhases = (
 				C68AB256298EA94E00EAE4F5 /* Sources */,
 				C68AB257298EA94E00EAE4F5 /* Frameworks */,
@@ -87,12 +87,12 @@
 			);
 			dependencies = (
 			);
-			name = TheComposableArchitecture;
+			name = "Simple-Todo";
 			packageProductDependencies = (
 				C68AB26C299132CD00EAE4F5 /* ComposableArchitecture */,
 			);
 			productName = TheComposableArchitecture;
-			productReference = C68AB25A298EA94E00EAE4F5 /* TheComposableArchitecture.app */;
+			productReference = C68AB25A298EA94E00EAE4F5 /* Simple-Todo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C68AB255298EA94E00EAE4F5 /* Build configuration list for PBXProject "TheComposableArchitecture" */;
+			buildConfigurationList = C68AB255298EA94E00EAE4F5 /* Build configuration list for PBXProject "Simple-Todo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C68AB259298EA94E00EAE4F5 /* TheComposableArchitecture */,
+				C68AB259298EA94E00EAE4F5 /* Simple-Todo */,
 			);
 		};
 /* End PBXProject section */
@@ -149,7 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C68AB260298EA94E00EAE4F5 /* TodoListView.swift in Sources */,
-				C68AB25E298EA94E00EAE4F5 /* TheComposableArchitectureApp.swift in Sources */,
+				C68AB25E298EA94E00EAE4F5 /* Simple-Todo.swift in Sources */,
 				C66A7F1D29D89B0500529A0C /* AddTodoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +332,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C68AB255298EA94E00EAE4F5 /* Build configuration list for PBXProject "TheComposableArchitecture" */ = {
+		C68AB255298EA94E00EAE4F5 /* Build configuration list for PBXProject "Simple-Todo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C68AB266298EA95000EAE4F5 /* Debug */,
@@ -341,7 +341,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C68AB268298EA95000EAE4F5 /* Build configuration list for PBXNativeTarget "TheComposableArchitecture" */ = {
+		C68AB268298EA95000EAE4F5 /* Build configuration list for PBXNativeTarget "Simple-Todo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C68AB269298EA95000EAE4F5 /* Debug */,
