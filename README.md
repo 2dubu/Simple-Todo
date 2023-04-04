@@ -1,2 +1,2 @@
-# TCA_Study
-This repository is for studying TCA.
+# Simple-Todo
+Simple Todo App with SwiftUI & TCA.
