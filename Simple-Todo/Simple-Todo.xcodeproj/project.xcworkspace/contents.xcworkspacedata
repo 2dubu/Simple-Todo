@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/geonwoo/GitHub/TheComposableArchitecture/TheComposableArchitecture/Simple-Todo.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
